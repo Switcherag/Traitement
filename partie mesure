@@ -1,0 +1,10 @@
+def point_mesure(theta,phi,dist,x,y,z):
+  a = dist*np.sin(theta)*np.sin(phi)
+  b = -dist*np.cos(theta)
+  c = dist*np.sin(theta)*np.cos(phi)
+  return [x+a,y+b,z+c]
+
+
+
+
+
