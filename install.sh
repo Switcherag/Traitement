@@ -102,6 +102,13 @@ sudo zypper in swappy wf-recorder grim tesseract tesseract-data slurp
 
 sudo zypper in gobject-introspection-devel gjs-devel libpulse-devel
 
+
+pip3 install https://github.com/T-Dynamos/materialyoucolor-python/archive/master.zip --break-system-packages
+sudo zypper in python3-material-color-utilities-python python3-base python3-regex unzip
+sudo zypper in python3-gobject-devel libsoup-devel blueprint-compiler python3-anyascii
+sudo zypper in python-base python3-svglib python3-libsass libxdp-devel typelib-1_0-Xdp-1_0 typelib-1_0-XdpGtk3-1_0 typelib-1_0-XdpGtk4-1_0
+
+
 # color-generation
 sudo zypper in python3-material-color-utilities-python python3-base python3-regex unzip
 sudo zypper in python3-gobject-devel libsoup-devel blueprint-compiler python3-anyascii
