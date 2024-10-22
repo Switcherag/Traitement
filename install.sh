@@ -14,7 +14,7 @@ sudo cp cliphist /usr/local/bin/cliphist
 
 sudo zypper in tinyxml-devel libtinyxml0 libtinyxml2-10 tinyxml2-devel gtkmm3-devel gtksourceviewmm-devel gtksourceviewmm3_0-devel libgtksourceviewmm-4_0-0 libgtksourceviewmm-3_0-0 cairomm-devel cairomm1_0-devel libcairomm-1_0-1 libcairomm-1_16-1
 
-sudo zypper in python3-build python3-Pillow python3-pywal python3-setuptools_scm python3-wheel
+sudo zypper in python3-build python3-Pillow python3-setuptools_scm python3-wheel
 
 sudo zypper in xrandr xdg-desktop-portal xdg-desktop-portal-gtk xdg-desktop-portal-hyprland
 
