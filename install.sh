@@ -24,19 +24,6 @@ echo Now we need to install \"yad\" via opi. You should select multimedia_proaud
 read -p "Press any key..."
 opi yad
 
-sudo zypper in scdoc
-cd $t
-git clone  https://github.com/ReimuNotMoe/ydotool
-cd ydotool
-mkdir build && cd build
-cmake -DSYSTEMD_USER_SERVICE=OFF -DSYSTEMD_SYSTEM_SERVICE=ON ..
-make -j `nproc`
-sudo make install
-sudo chmod +s $(which ydotool)
-sudo systemctl daemon-reload
-sudo systemctl enable ydotoold
-sudo systemctl start ydotoold
-ln -sf /tmp/.ydotool_socket /run/user/$(id -u $(whoami))/.ydotool_socket
 
 sudo zypper in webp-pixbuf-loader gtk-layer-shell-devel gtk3 libgtksourceview-3_0-1 gtksourceview-devel gobject-introspection upower
 
